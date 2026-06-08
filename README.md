@@ -52,3 +52,17 @@ An interactive text adventure that demonstrates persistent execution states usin
 * **Core Concepts Applied:**
   * **State-Driven Loops:** Using a boolean control flag (`game_active`) to maintain operational context until an explicit win/loss outcome is triggered.
   * **Nested Conditional Trees:** Implementing layered `if-elif-else` code blocks to process multi-stage narrative paths and user choices.
+
+### 6. Java Multiplication Table (`MultiplicationTable.java`)
+A Java console application focused on syntax structure, block-scoped loop counters, and arithmetic processing within compiled code threads.
+
+* **Core Concepts Applied:**
+  * **Compiled Language Syntax:** Structuring strong-typed entry points through standard class envelopes and fixed main arguments (`public static void main`).
+  * **Counter-Controlled Loops (`for`):** Implementing strict iteration limits using standard initializer, conditional check, and evaluation steps.
+
+    ### 7. Interactive Multiplication Quiz (`math_quiz.py`)
+A dynamic arithmetic training game utilizing an infinite tracking loop paired with input-type verification to manage session scores.
+
+* **Core Concepts Applied:**
+  * **Infinite Loop Control (`while True`):** Maintaining an active gameplay cycle until an explicit terminal command string ('exit') is parsed.
+  * **State Accumulation:** Managing structural arithmetic scores across iterative loop passes based on matching logic evaluations.
