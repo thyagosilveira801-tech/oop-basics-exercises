@@ -2,12 +2,17 @@
 
 This repository serves as a centralized collection of practical exercises focused on Object-Oriented Programming (OOP) fundamentals, data collection, type casting, and console output formatting.
 
+
 ## 📁 Repository Structure
 
 * `Module-02-OOP-Basics/`: Core principles, primitive data types, and user interactions.
   * 📄 `student_registry.py`: Script to collect, convert, and cleanly display academic profiles.
-
----
+  * 📄 `average_calculator.py`: Script implementing modular functions to process numeric arguments.
+  * 📄 `path_choice.py`: Text-based adventure script using basic if-elif-else branching.
+  * 📄 `guessing_game.py`: Secret number guessing game with exceptions and random limits.
+  * 📄 `adventure_game.py`: Dynamic choice matrix using active state flags and deep nesting.
+* `Module-02-Java-Basics/`: Intro to compiled languages and syntax controls.
+  * 📄 `MultiplicationTable.java`: Counter-controlled loop displaying arithmetic sequences.
 
 ## 🚀 Projects Overview
 
