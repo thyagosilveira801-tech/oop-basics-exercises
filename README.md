@@ -11,8 +11,10 @@ This repository serves as a centralized collection of practical exercises focuse
   * 📄 `path_choice.py`: Text-based adventure script using basic if-elif-else branching.
   * 📄 `guessing_game.py`: Secret number guessing game with exceptions and random limits.
   * 📄 `adventure_game.py`: Dynamic choice matrix using active state flags and deep nesting.
+  * 📄 `math_quiz.py`: Interactive multiplication game featuring score tracking and dynamic random bounds.
 * `Module-02-Java-Basics/`: Intro to compiled languages and syntax controls.
   * 📄 `MultiplicationTable.java`: Counter-controlled loop displaying arithmetic sequences.
+  * 📄 `Account.java`: Object-Oriented paradigm application focusing on encapsulation, constructors, and instance comparison.
 
 ## 🚀 Projects Overview
 
@@ -66,3 +68,11 @@ A dynamic arithmetic training game utilizing an infinite tracking loop paired wi
 * **Core Concepts Applied:**
   * **Infinite Loop Control (`while True`):** Maintaining an active gameplay cycle until an explicit terminal command string ('exit') is parsed.
   * **State Accumulation:** Managing structural arithmetic scores across iterative loop passes based on matching logic evaluations.
+
+### 7. Object-Oriented Account Management (`Account.java`)
+A Java application implementing basic Object-Oriented Programming (OOP) design patterns, emphasizing variable encapsulation, instance constructors, and data protection hooks.
+
+* **Core Concepts Applied:**
+  * **Data Encapsulation:** Declaring class attributes with `private` access modifiers to prevent unauthorized state manipulation from external classes.
+  * **Constructor Initialization:** Leveraging the `this` keyword inside explicit constructors to correctly map arguments to local instance fields during instantiation.
+  * **Accessor Methods (Getters):** Implementing standard public getters to selectively expose specific internal object states safely.
