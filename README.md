@@ -32,3 +32,11 @@ An interactive text-based adventure script designed to showcase conditional flow
 * **Core Concepts Applied:**
   * **Conditional Branching (`if-elif-else`):** Routing the application execution down completely separate logical paths based on runtime evaluation.
   * **Input Sanitization:** Utilizing `.strip().upper()` chained string methods to safeguard data entry against unexpected white spaces or casing mismatches.
+
+### 4. Secret Number Guessing Game (`guessing_game.py`)
+An interactive console game demonstrating input validation, exception handling, and random number generation inside a dynamic logic loop.
+
+* **Core Concepts Applied:**
+  * **Pseudo-Random Generation:** Utilizing Python's built-in `random` module to instantiate unexpected state parameters at runtime.
+  * **Exception Handling (`try-except`):** Safeguarding the execution thread against crash triggers when typecasting unexpected non-integer string data.
+  * **Loop Breaks & Flags:** Managing structured loop escapes using intentional `break` and `continue` statements based on user decisions or mathematical results.
