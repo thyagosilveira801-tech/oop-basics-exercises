@@ -25,3 +25,10 @@ A script structured to demonstrate modular programming by isolating mathematical
 * **Core Concepts Applied:**
   * **Modular Functions:** Defining custom operations using the `def` keyword to separate business logic from the user interface.
   * **Parameter Passing & Returns:** Sending console-derived numeric arguments into an isolated routine and capturing the returned computational payload.
+
+    ### 3. Path Choice Adventure (`path_choice.py`)
+An interactive text-based adventure script designed to showcase conditional flow control and input standardization techniques in Python.
+
+* **Core Concepts Applied:**
+  * **Conditional Branching (`if-elif-else`):** Routing the application execution down completely separate logical paths based on runtime evaluation.
+  * **Input Sanitization:** Utilizing `.strip().upper()` chained string methods to safeguard data entry against unexpected white spaces or casing mismatches.
