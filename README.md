@@ -69,7 +69,7 @@ A dynamic arithmetic training game utilizing an infinite tracking loop paired wi
   * **Infinite Loop Control (`while True`):** Maintaining an active gameplay cycle until an explicit terminal command string ('exit') is parsed.
   * **State Accumulation:** Managing structural arithmetic scores across iterative loop passes based on matching logic evaluations.
 
-### 7. Object-Oriented Account Management (`Account.java`)
+### 8. Object-Oriented Account Management (`Account.java`)
 A Java application implementing basic Object-Oriented Programming (OOP) design patterns, emphasizing variable encapsulation, instance constructors, and data protection hooks.
 
 * **Core Concepts Applied:**
