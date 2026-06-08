@@ -39,4 +39,11 @@ An interactive console game demonstrating input validation, exception handling, 
 * **Core Concepts Applied:**
   * **Pseudo-Random Generation:** Utilizing Python's built-in `random` module to instantiate unexpected state parameters at runtime.
   * **Exception Handling (`try-except`):** Safeguarding the execution thread against crash triggers when typecasting unexpected non-integer string data.
-  * **Loop Breaks & Flags:** Managing structured loop escapes using intentional `break` and `continue` statements based on user decisions or mathematical results.
+ * **Loop Breaks & Flags:** Managing structured loop escapes using intentional `break` and `continue` statements based on user decisions or mathematical results.
+
+### 5. Text-Based Adventure Game (`adventure_game.py`)
+An interactive text adventure that demonstrates persistent execution states using a dynamic `while` loop combined with deeply nested conditional routing blocks.
+
+* **Core Concepts Applied:**
+  * **State-Driven Loops:** Using a boolean control flag (`game_active`) to maintain operational context until an explicit win/loss outcome is triggered.
+  * **Nested Conditional Trees:** Implementing layered `if-elif-else` code blocks to process multi-stage narrative paths and user choices.
