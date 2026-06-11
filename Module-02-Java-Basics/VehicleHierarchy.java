@@ -1,57 +1,57 @@
 import java.util.Scanner;
 
 // --- BASE CLASS (PARENT) ---
-class Veiculo {
+class Vehicle {
     // Protected attributes accessible within the class hierarchy
-    protected String marca;
-    protected int ano;
+    protected String brand;
+    protected int year;
 
     // Base constructor mapping arguments to local fields
-    public Veiculo(String marca, int ano) {
-        this.marca = marca;
-        this.ano = ano;
+    public Vehicle(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
     }
 
-    // Standard presentation method to print baseline attributes
-    public void apresentar() {
-        System.out.println("Marca: " + this.marca);
-        System.out.println("Ano de Fabricacao: " + this.ano);
+    // Presentation method to print baseline attributes
+    public void displayInfo() {
+        System.out.println("Brand: " + this.brand);
+        System.out.println("Manufacturing Year: " + this.year);
     }
 }
 
-// --- SUBCLASS: CARRO (CHILD) ---
-class Carro extends Veiculo {
-    private int numeroPortas;
+// --- SUBCLASS: CAR (CHILD) ---
+class Car extends Vehicle {
+    private int numberOfDoors;
 
     // Subclass constructor invoking the parent routine via 'super'
-    public Carro(String marca, int ano, int numeroPortas) {
-        super(marca, ano); // Leverages parent initialization logic
-        this.numeroPortas = numeroPortas; // Binds local subclass state
+    public Car(String brand, int year, int numberOfDoors) {
+        super(brand, year); // Leverages parent initialization logic
+        this.numberOfDoors = numberOfDoors; // Binds local subclass state
     }
 
     // Specialized override to enrich presentation outputs
     @Override
-    public void apresentar() {
-        super.apresentar();
-        System.out.println("Numero de Portas: " + this.numeroPortas);
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Number of Doors: " + this.numberOfDoors);
     }
 }
 
-// --- SUBCLASS: MOTO (CHILD) ---
-class Moto extends Veiculo {
-    private String tipo; // e.g., Sport, Custom, Scooter
+// --- SUBCLASS: MOTORCYCLE (CHILD) ---
+class Motorcycle extends Vehicle {
+    private String type; // e.g., Sport, Custom, Scooter
 
     // Subclass constructor mapping states through parent hooks
-    public Moto(String marca, int ano, String tipo) {
-        super(marca, ano);
-        this.tipo = tipo;
+    public Motorcycle(String brand, int year, String type) {
+        super(brand, year);
+        this.type = type;
     }
 
     // Specialized override to include dynamic motorcycle types
     @Override
-    public void apresentar() {
-        super.apresentar();
-        System.out.println("Tipo de Moto: " + this.tipo);
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Motorcycle Type: " + this.type);
     }
 }
 
@@ -61,43 +61,43 @@ public class VehicleHierarchy {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("=========================================");
-        System.out.println("   SISTEMA DE HIERARQUIA DE VEICULOS     ");
+        System.out.println("        VEHICLE HIERARCHY SYSTEM         ");
         System.out.println("=========================================\n");
 
         // 1. Instantiating Car state components via User input
-        System.out.println("--- REGISTAR CARRO ---");
-        System.out.print("Digite a marca do carro: ");
-        String marcaCarro = scanner.nextLine();
-        System.out.print("Digite o ano do carro: ");
-        int anoCarro = scanner.nextInt();
-        System.out.print("Digite o numero de portas: ");
-        int portasCarro = scanner.nextInt();
+        System.out.println("--- REGISTER CAR ---");
+        System.out.print("Enter car brand: ");
+        String carBrand = scanner.nextLine();
+        System.out.print("Enter car year: ");
+        int carYear = scanner.nextInt();
+        System.out.print("Enter number of doors: ");
+        int carDoors = scanner.nextInt();
         scanner.nextLine(); // Clear scanner buffer
 
-        Carro meuCarro = new Carro(marcaCarro, anoCarro, portasCarro);
+        Car myCar = new Car(carBrand, carYear, carDoors);
 
         System.out.println("\n-----------------------------------------");
 
-        // 2. Instantiating Moto state components via User input
-        System.out.println("--- REGISTAR MOTO ---");
-        System.out.print("Digite a marca da moto: ");
-        String marcaMoto = scanner.nextLine();
-        System.out.print("Digite o ano da moto: ");
-        int anoMoto = scanner.nextInt();
+        // 2. Instantiating Motorcycle state components via User input
+        System.out.println("--- REGISTER MOTORCYCLE ---");
+        System.out.print("Enter motorcycle brand: ");
+        String motoBrand = scanner.nextLine();
+        System.out.print("Enter motorcycle year: ");
+        int motoYear = scanner.nextInt();
         scanner.nextLine(); // Clear scanner buffer
-        System.out.print("Digite o tipo da moto (Ex: Desportiva, Custom): ");
-        String tipoMoto = scanner.nextLine();
+        System.out.print("Enter motorcycle type (e.g., Sport, Custom, Scooter): ");
+        String motoType = scanner.nextLine();
 
-        Moto minhaMoto = new Moto(marcaMoto, anoMoto, tipoMoto);
+        Motorcycle myMotorcycle = new Motorcycle(motoBrand, motoYear, motoType);
 
         // 3. Executing Display logic using polymorphism triggers
-        System.out.println("\n================ RESUMO DOS VEICULOS ================");
-        System.out.println("\n[ Informacoes do Carro ]");
-        meuCarro.apresentar();
+        System.out.println("\n================ VEHICLES SUMMARY ================");
+        System.out.println("\n[ Car Information ]");
+        myCar.displayInfo();
 
-        System.out.println("\n[ Informacoes da Moto ]");
-        minhaMoto.apresentar();
-        System.out.println("=====================================================");
+        System.out.println("\n[ Motorcycle Information ]");
+        myMotorcycle.displayInfo();
+        System.out.println("==================================================");
 
         scanner.close();
     }
