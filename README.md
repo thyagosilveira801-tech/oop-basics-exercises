@@ -76,3 +76,11 @@ A Java application implementing basic Object-Oriented Programming (OOP) design p
   * **Data Encapsulation:** Declaring class attributes with `private` access modifiers to prevent unauthorized state manipulation from external classes.
   * **Constructor Initialization:** Leveraging the `this` keyword inside explicit constructors to correctly map arguments to local instance fields during instantiation.
   * **Accessor Methods (Getters):** Implementing standard public getters to selectively expose specific internal object states safely.
+
+### 9. Student Management System (`StudentManagement.java`)
+A interactive Java terminal application implementing structural constructor overloading patterns alongside dynamic collections to simulate real-time database registries.
+
+* **Core Concepts Applied:**
+  * **Constructor Overloading:** Providing multiple initialization states (default values vs. parameter mapping) within the same object blueprint.
+  * **Dynamic Collection Tracking (`ArrayList`):** Managing persistent, scale-flexible objects in runtime memory spaces using automated collection index management.
+  * **Menu Interface Loop (`do-while` / `switch-case`):** Designing safe context-driven application menus capable of executing iterative operational selections until terminated by user state inputs.
