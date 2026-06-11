@@ -19,6 +19,7 @@ This repository serves as a centralized collection of practical exercises focuse
 * 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
 * 📄 `hierarquia_animais.py`: Script showcasing classical single inheritance and attribute protection hooks.
 * 📄 `VehicleHierarchy.java`: Advanced application mapping class extension structures and protected encapsulation loops.
+* 📄 `PaymentSystem.java`: Console interface using object polymorphism to simulate structural runtime transaction gateways.
 
 ### 1. Student Profile Registry (`student_registry.py`)
 A foundational Python script designed to capture dynamic console entries, enforce proper data type conversions, and present a structured textual data block.
@@ -111,3 +112,11 @@ Core Concepts Applied:
 * **Classical Inheritance (`extends`):** Generating vertical behavioral structures where child nodes (`Carro` / `Moto`) inherit and augment the parameters of a common root blueprint (`Veiculo`).
 * **Hierarchical Initialization Contexts (`super`):** Activating root constructor logic using the `super` keyword to process shared data attributes cleanly before subclass memory maps lock.
 * **Polymorphic Method Overriding (`@Override`):** Redefining baseline execution blocks (`apresentar`) within downstream classes to enrich runtime console logs without breaking shared design structures.
+
+### 13. Polymorphic Payment Processing Engine (`PaymentSystem.java`)
+
+An interactive checkout solution executing polymorphic object bindings to resolve execution trees dynamically using decoupled baseline schemas and localized override methods.
+Core Concepts Applied:
+* **Runtime Polymorphism:** Declaring decoupled parent objects (`FormaDePagamento`) to reference unique sub-object memories (`CartaoCredito` / `PayPal`) compiled dynamically at execution phase.
+* **Dynamic Method Binding:** Overriding virtual root routines (`processarPagamento`) to dispatch specialized algorithmic paths dependent entirely on active operational contexts.
+* **Console String Manipulation Security:** Isolating non-public inputs via safe string tokenization techniques (`substring`) to partially obscure structural credit card inputs during standard system receipts.
