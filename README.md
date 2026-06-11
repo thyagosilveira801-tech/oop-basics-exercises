@@ -16,7 +16,8 @@ This repository serves as a centralized collection of practical exercises focuse
 * `Module-02-Java-Basics/`: Intro to compiled languages and syntax controls.
   * 📄 `MultiplicationTable.java`: Counter-controlled loop displaying arithmetic sequences.
   * 📄 `Account.java`: Object-Oriented paradigm application focusing on encapsulation, constructors, and instance comparison.
-  * 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
+* 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
+* 📄 `hierarquia_animais.py`: Script showcasing classical single inheritance and attribute protection hooks.
 
 ### 1. Student Profile Registry (`student_registry.py`)
 A foundational Python script designed to capture dynamic console entries, enforce proper data type conversions, and present a structured textual data block.
@@ -93,3 +94,11 @@ Core Concepts Applied:
 * **Object Instance State Binding:** Customizing runtime initializers (`__init__`) using standard `self` mapping context constraints to bind operational traits uniquely to active execution nodes.
 * **Inverse Proportional Operations:** Implementing randomized time calculation patterns where computation output factors scale inversely with object configuration thresholds (simulating weight-to-speed boundaries via `random.uniform`).
 * **Console Delay Simulation:** Embedding automated standard library time gaps (`time.sleep`) to simulate terminal execution pacing and dynamic operational feedback cycles.
+
+### 11. Object-Oriented Animal Hierarchy System (`hierarquia_animais.py`)
+
+A practical Python script structured to demonstrate classical single inheritance and standard naming conventions for protected attribute states across distinct object boundaries.
+Core Concepts Applied:
+* **Class-Level Inheritance:** Deriving common behaviors and parameters inside child subclasses (`Cao` and `Gato`) directly from a generalized base parent blueprint (`Animal`).
+* **Protected Attribute Naming Conventions:** Simulating non-public scoping properties using a single leading underscore prefix (`_nome`) to restrict structural access strategies conceptually.
+* **Method Reuse vs. Specialization:** Executing shared foundational routines (`emitir_som`) while maintaining distinct subclass operational loops (`latir` / `miar`).
