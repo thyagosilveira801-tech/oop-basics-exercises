@@ -1,64 +1,62 @@
-# --- CLASSE BASE (MÃE) ---
+# --- BASE CLASS (PARENT) ---
 class Animal:
-    # Construtor que aceita o nome do animal
-    def __init__(self, nome: str):
-        # Em Python, um sublinhado antes do nome (_nome) indica um atributo PROTEGIDO
-        self._nome = nome 
+    # Constructor mapping the generic animal name
+    def __init__(self, name: str):
+        # A single leading underscore (_name) indicates a PROTECTED attribute in Python
+        self._name = name 
 
-    # Método genérico para emitir som
-    def emitir_som(self):
-        print(f"O animal {self._nome} emite um som genérico.")
+    # Generic method to make a sound
+    def make_sound(self):
+        print(f"The animal {self._name} makes a generic sound.")
 
 
-# --- SUBCLASSES (FILHAS) QUE HERDAM DE ANIMAL ---
+# --- CHILD SUBCLASSES INHERITING FROM ANIMAL ---
 
-class Cao(Animal):
-    # O Cão herda o construtor e o atributo _nome automaticamente de Animal
+class Dog(Animal):
+    # Dog inherits the constructor and _name attribute automatically from Animal
     
-    # Método específico da classe Cao
-    def latir(self):
-        print(f"O cão {self._nome} está latindo: Au Au! 🐶")
+    # Specific subclass method
+    def bark(self):
+        print(f"The dog {self._name} is barking: Woof Woof! 🐶")
 
 
-class Gato(Animal):
-    # O Gato herda o construtor e o atributo _nome automaticamente de Animal
+class Cat(Animal):
+    # Cat inherits the constructor and _name attribute automatically from Animal
     
-    # Método específico da classe Gato
-    def miar(self):
-        print(f"O gato {self._nome} está miando: Miau! 🐱")
+    # Specific subclass method
+    def meow(self):
+        print(f"The cat {self._name} is meowing: Meow! 🐱")
 
 
-# --- PROGRAMA PRINCIPAL ---
+# --- MAIN EXECUTION RUNTIME ---
 def main():
     print("=========================================")
-    print("    SISTEMA DE HIERARQUIA DE ANIMAIS     ")
+    print("        ANIMAL HIERARCHY SYSTEM          ")
     print("=========================================\n")
 
-    # Criando o Cão com a interação do utilizador
-    nome_cao = input("Dê um nome para o seu Cão: ").strip()
-    # Criando a instância/objeto da classe Cao
-    meu_cao = Cao(nome_cao) 
+    # Creating the Dog instance via user setup
+    dog_name = input("Give a name to your Dog: ").strip()
+    my_dog = Dog(dog_name) 
     
     print("-" * 40)
 
-    # Criando o Gato com a interação do utilizador
-    nome_gato = input("Dê um nome para o seu Gato: ").strip()
-    # Criando a instância/objeto da classe Gato
-    meu_gato = Gato(nome_gato)
+    # Creating the Cat instance via user setup
+    cat_name = input("Give a name to your Cat: ").strip()
+    my_gato = Cat(cat_name)
 
-    print("\n================ TESTANDO AS AÇÕES ================")
+    print("\n================ TESTING ACTIONS ================")
     
-    # 1. Testando as ações do Cão
-    print(f"\nAções do {meu_cao._nome}:")
-    meu_cao.emitir_som() # Método herdado da classe base Animal
-    meu_cao.latir()      # Método específico da subclasse Cao
+    # 1. Triggering Dog behaviors
+    print(f"\nActions for {my_dog._name}:")
+    my_dog.make_sound()  # Inherited method from parent class
+    my_dog.bark()        # Specific method from child class
 
-    # 2. Testando as ações do Gato
-    print(f"\nAções do {meu_gato._nome}:")
-    meu_gato.emitir_som() # Método herdado da classe base Animal
-    meu_gato.miar()       # Método específico da subclasse Gato
+    # 2. Triggering Cat behaviors
+    print(f"\nActions for {my_gato._name}:")
+    my_gato.make_sound()  # Inherited method from parent class
+    my_gato.meow()        # Specific method from child class
 
-    print("===================================================")
+    print("=================================================")
 
 if __name__ == "__main__":
     main()
