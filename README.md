@@ -18,6 +18,7 @@ This repository serves as a centralized collection of practical exercises focuse
   * 📄 `Account.java`: Object-Oriented paradigm application focusing on encapsulation, constructors, and instance comparison.
 * 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
 * 📄 `hierarquia_animais.py`: Script showcasing classical single inheritance and attribute protection hooks.
+* 📄 `VehicleHierarchy.java`: Advanced application mapping class extension structures and protected encapsulation loops.
 
 ### 1. Student Profile Registry (`student_registry.py`)
 A foundational Python script designed to capture dynamic console entries, enforce proper data type conversions, and present a structured textual data block.
@@ -102,3 +103,11 @@ Core Concepts Applied:
 * **Class-Level Inheritance:** Deriving common behaviors and parameters inside child subclasses (`Cao` and `Gato`) directly from a generalized base parent blueprint (`Animal`).
 * **Protected Attribute Naming Conventions:** Simulating non-public scoping properties using a single leading underscore prefix (`_nome`) to restrict structural access strategies conceptually.
 * **Method Reuse vs. Specialization:** Executing shared foundational routines (`emitir_som`) while maintaining distinct subclass operational loops (`latir` / `miar`).
+
+### 12. Advanced Vehicle Hierarchy System (`VehicleHierarchy.java`)
+
+An object-oriented Java application mapping corporate vehicle types to demonstrate class extension structures, protected encapsulation rules, and hierarchical constructor chainings.
+Core Concepts Applied:
+* **Classical Inheritance (`extends`):** Generating vertical behavioral structures where child nodes (`Carro` / `Moto`) inherit and augment the parameters of a common root blueprint (`Veiculo`).
+* **Hierarchical Initialization Contexts (`super`):** Activating root constructor logic using the `super` keyword to process shared data attributes cleanly before subclass memory maps lock.
+* **Polymorphic Method Overriding (`@Override`):** Redefining baseline execution blocks (`apresentar`) within downstream classes to enrich runtime console logs without breaking shared design structures.
