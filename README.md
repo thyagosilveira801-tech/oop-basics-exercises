@@ -3,7 +3,7 @@
 This repository serves as a centralized collection of practical exercises focused on Object-Oriented Programming (OOP) fundamentals, data collection, type casting, and console output formatting.
 
 
-## 📁 Repository Structure
+📁 Repository Structure
 
 * `Module-02-OOP-Basics/`: Core principles, primitive data types, and user interactions.
   * 📄 `student_registry.py`: Script to collect, convert, and cleanly display academic profiles.
@@ -15,8 +15,7 @@ This repository serves as a centralized collection of practical exercises focuse
 * `Module-02-Java-Basics/`: Intro to compiled languages and syntax controls.
   * 📄 `MultiplicationTable.java`: Counter-controlled loop displaying arithmetic sequences.
   * 📄 `Account.java`: Object-Oriented paradigm application focusing on encapsulation, constructors, and instance comparison.
-
-## 🚀 Projects Overview
+  * 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
 
 ### 1. Student Profile Registry (`student_registry.py`)
 A foundational Python script designed to capture dynamic console entries, enforce proper data type conversions, and present a structured textual data block.
