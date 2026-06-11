@@ -5,7 +5,7 @@ This repository serves as a centralized collection of practical exercises focuse
 
 📂 Repository Structure
 
-* `Module-02-OOP-Basics/`: Core principles, primitive data types, and user interactions.
+Module-02-OOP-Basics/: Core principles, primitive data types, and user interactions.
   * 📄 `student_registry.py`: Script to collect, convert, and cleanly display academic profiles.
   * 📄 `average_calculator.py`: Script implementing modular functions to process numeric arguments.
   * 📄 `path_choice.py`: Text-based adventure script using basic if-elif-else branching.
@@ -13,13 +13,14 @@ This repository serves as a centralized collection of practical exercises focuse
   * 📄 `adventure_game.py`: Dynamic choice matrix using active state flags and deep nesting.
   * 📄 `math_quiz.py`: Interactive multiplication game featuring score tracking and dynamic random bounds.
   * 📄 `simulador_corrida.py`: Object-Oriented racing simulator leveraging static class attributes and instance states.
-* `Module-02-Java-Basics/`: Intro to compiled languages and syntax controls.
+  * 📄 `hierarquia_animais.py`: Script showcasing classical single inheritance and attribute protection hooks.
+
+Module-02-Java-Basics/: Intro to compiled languages and syntax controls.
   * 📄 `MultiplicationTable.java`: Counter-controlled loop displaying arithmetic sequences.
   * 📄 `Account.java`: Object-Oriented paradigm application focusing on encapsulation, constructors, and instance comparison.
-* 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
-* 📄 `hierarquia_animais.py`: Script showcasing classical single inheritance and attribute protection hooks.
-* 📄 `VehicleHierarchy.java`: Advanced application mapping class extension structures and protected encapsulation loops.
-* 📄 `PaymentSystem.java`: Console interface using object polymorphism to simulate structural runtime transaction gateways.
+  * 📄 `StudentManagement.java`: Advanced OOP interface showcasing constructor overloading, dynamic object lists, and console execution menus.
+  * 📄 `VehicleHierarchy.java`: Advanced application mapping class extension structures and protected encapsulation loops.
+  * 📄 `PaymentSystem.java`: Console interface using object polymorphism to simulate structural runtime transaction gateways.
 
 ### 1. Student Profile Registry (`student_registry.py`)
 A foundational Python script designed to capture dynamic console entries, enforce proper data type conversions, and present a structured textual data block.
