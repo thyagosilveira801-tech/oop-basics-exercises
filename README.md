@@ -84,3 +84,12 @@ A interactive Java terminal application implementing structural constructor over
   * **Constructor Overloading:** Providing multiple initialization states (default values vs. parameter mapping) within the same object blueprint.
   * **Dynamic Collection Tracking (`ArrayList`):** Managing persistent, scale-flexible objects in runtime memory spaces using automated collection index management.
   * **Menu Interface Loop (`do-while` / `switch-case`):** Designing safe context-driven application menus capable of executing iterative operational selections until terminated by user state inputs.
+
+### 10. Object-Oriented Racing Simulator (`simulador_corrida.py`)
+
+An interactive Python console simulation mapping structural automotive classes to evaluate race tracking logic using synchronized instance properties and shared class counters.
+Core Concepts Applied:
+* **Static Class Attributes:** Utilizing class-level scoped properties (`vencedor = "Nenhum"`) to register and update global reference boundaries independent of specific object allocation loops.
+* **Object Instance State Binding:** Customizing runtime initializers (`__init__`) using standard `self` mapping context constraints to bind operational traits uniquely to active execution nodes.
+* **Inverse Proportional Operations:** Implementing randomized time calculation patterns where computation output factors scale inversely with object configuration thresholds (simulating weight-to-speed boundaries via `random.uniform`).
+* **Console Delay Simulation:** Embedding automated standard library time gaps (`time.sleep`) to simulate terminal execution pacing and dynamic operational feedback cycles.
