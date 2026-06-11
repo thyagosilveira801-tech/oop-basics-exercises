@@ -3,7 +3,7 @@
 This repository serves as a centralized collection of practical exercises focused on Object-Oriented Programming (OOP) fundamentals, data collection, type casting, and console output formatting.
 
 
-📁 Repository Structure
+📂 Repository Structure
 
 * `Module-02-OOP-Basics/`: Core principles, primitive data types, and user interactions.
   * 📄 `student_registry.py`: Script to collect, convert, and cleanly display academic profiles.
@@ -12,6 +12,7 @@ This repository serves as a centralized collection of practical exercises focuse
   * 📄 `guessing_game.py`: Secret number guessing game with exceptions and random limits.
   * 📄 `adventure_game.py`: Dynamic choice matrix using active state flags and deep nesting.
   * 📄 `math_quiz.py`: Interactive multiplication game featuring score tracking and dynamic random bounds.
+  * 📄 `simulador_corrida.py`: Object-Oriented racing simulator leveraging static class attributes and instance states.
 * `Module-02-Java-Basics/`: Intro to compiled languages and syntax controls.
   * 📄 `MultiplicationTable.java`: Counter-controlled loop displaying arithmetic sequences.
   * 📄 `Account.java`: Object-Oriented paradigm application focusing on encapsulation, constructors, and instance comparison.
