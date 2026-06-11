@@ -1,95 +1,94 @@
 import random
 import time
 
-# --- DEFINIÇÃO DA CLASSE CARRO ---
-class Carro:
-    # Membro de classe 'static' para rastrear o nome do carro vencedor globalmente
-    vencedor = "Nenhum"
+# --- CAR CLASS DEFINITION ---
+class Car:
+    # Static class member to track the global winner's name
+    winner = "None"
 
-    # Método construtor (inicializa nome e velocidade)
-    def __init__(self, nome: str, velocidade_maxima: int):
-        self.nome = nome                  # Membro de instância
-        self.velocidade_maxima = velocidade_maxima  # Membro de instância
+    # Constructor method (initializes name and max speed)
+    def __init__(self, name: str, max_speed: int):
+        self.name = name              # Instance member
+        self.max_speed = max_speed    # Instance member
 
-    # Método para simular a corrida
-    def correr(self):
-        # Gera um tempo aleatório inversamente proporcional à velocidade máxima.
-        # Carros mais rápidos têm maior probabilidade de terminar em menos tempo!
-        # Usamos random.uniform para simular segundos com casas decimais.
-        fator_sorte = random.uniform(0.8, 1.2)
-        tempo_corrida = (100 / self.velocidade_maxima) * 10 * fator_sorte
-        return round(tempo_corrida, 2)
+    # Method to simulate the race performance
+    def drive(self):
+        # Generates a random time inversely proportional to the maximum speed.
+        # Faster cars are more likely to finish in less time.
+        luck_factor = random.uniform(0.8, 1.2)
+        race_time = (100 / self.max_speed) * 10 * luck_factor
+        return round(race_time, 2)
 
 
-# --- PROGRAMA PRINCIPAL ---
-def iniciar_campeonato():
-    # Criação dos carros disponíveis (pelo menos três diferentes)
-    carro1 = Carro("Ferrari F8", 340)
-    carro2 = Carro("Porsche 911", 310)
-    carro3 = Carro("Lamborghini", 325)
+# --- MAIN EXECUTION PROGRAM ---
+def start_championship():
+    # Instantiating available cars
+    car1 = Car("Ferrari F8", 340)
+    car2 = Car("Porsche 911", 310)
+    car3 = Car("Lamborghini", 325)
     
-    lista_carros = [carro1, carro2, carro3]
+    car_list = [car1, car2, car3]
 
     print("=========================================")
-    print(" 🏎️  SIMULADOR DE CORRIDA DE CARROS 🏎️ ")
+    print(" 🏎️       RACING CAR SIMULATOR       🏎️ ")
     print("=========================================")
 
     while True:
-        print("\nCarros disponíveis para o Grande Prémio:")
-        for i, carro in enumerate(lista_carros, 1):
-            print(f"[{i}] {carro.nome} (Velocidade Máxima: {carro.velocidade_maxima} km/h)")
+        print("\nAvailable cars for the Grand Prix:")
+        for i, car in enumerate(car_list, 1):
+            print(f"[{i}] {car.name} (Max Speed: {car.max_speed} km/h)")
         
-        print("[0] Sair do Simulador")
+        print("[0] Exit Simulator")
         
         try:
-            escolha = int(input("\nEscolha o seu carro pelo número para iniciar a corrida: "))
+            choice = int(input("\nChoose your car by number to start the race: "))
         except ValueError:
-            print("Por favor, digite um número válido.")
+            print("Please enter a valid number.")
             continue
 
-        if escolha == 0:
-            print("A desligar os motores... Até à próxima corrida!")
+        if choice == 0:
+            print("Shutting down engines... See you next race!")
             break
-        elif escolha < 1 or escolha > len(lista_carros):
-            print("Opção inválida! Escolha um carro da lista.")
+        elif choice < 1 or choice > len(car_list):
+            print("Invalid option! Choose a car from the list.")
             continue
 
-        carro_jogador = lista_carros[escolha - 1]
-        print(f"\n🟢 Escolheu a {carro_jogador.nome}! Os motores estão a aquecer...")
+        player_car = car_list[choice - 1]
+        print(f"\n🟢 You chose the {player_car.name}! Engines are warming up...")
         time.sleep(1)
-        print("3... 2... 1... FAIXAS DE PARTIDA! 🏁")
+        print("3... 2... 1... GO! 🏁")
         time.sleep(1)
 
-        # Variáveis para controlo dos tempos da corrida atual
-        menor_tempo = float('inf')
-        nome_vencedor_atual = ""
+        # Variables to track the current race results
+        best_time = float('inf')
+        current_winner_name = ""
 
-        # Todos os carros correm na pista
-        for carro in lista_carros:
-            tempo = carro.correr()
-            print(f"⏱️  {carro.nome} completou a pista em: {tempo} segundos.")
+        # All cars run on the track
+        for car in car_list:
+            lap_time = car.drive()
+            print(f"⏱️  {car.name} completed the track in: {lap_time} seconds.")
             
-            # O carro com o MENOR tempo vence a corrida
-            if tempo < menor_tempo:
-                menor_tempo = tempo
-                nome_vencedor_atual = carro.nome
+            # The car with the LOWEST time wins
+            if lap_time < best_time:
+                best_time = lap_time
+                current_winner_name = car.name
 
-        # Atualiza o membro STATIC da classe Carro com o grande vencedor
-        Carro.vencedor = nome_vencedor_atual
+        # Updating the STATIC member of the Car class
+        Car.winner = current_winner_name
 
-        # Exibe os resultados finais
-        print("\n================ FINAL DA CORRIDA ================")
-        print(f"🏆 O VENCEDOR FOI: {Carro.vencedor}!")
-        print(f"⏱️  Tempo do vencedor: {menor_tempo} segundos.")
-        print("==================================================")
+        # Display final scoreboard
+        print("\n================ RACE RESULTS ================")
+        print(f"🏆 THE WINNER IS: {Car.winner}!")
+        print(f"⏱️  Winner's Time: {best_time} seconds.")
+        print("==============================================")
         
-        # Feedback extra para o jogador
-        if Carro.vencedor == carro_jogador.nome:
-            print("🎉 Parabéns! O seu carro cruzou a meta em primeiro lugar!")
+        # Player feedback loop
+        if Car.winner == player_car.name:
+            print("🎉 Congratulations! Your car crossed the finish line first!")
         else:
-            print("❌ Não foi desta vez! O seu carro não conseguiu vencer.")
+            print("❌ Not this time! Your car couldn't beat the competition.")
 
-        input("\nPressione Enter para voltar ao menu e correr novamente...")
+        input("\ Press Enter to return to the menu and race again...")
 
 if __name__ == "__main__":
-    iniciar_campeonato()
+    start_championship()
